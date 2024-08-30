@@ -25,7 +25,7 @@ COPY --from=build /app/target/*.war /usr/local/tomcat/webapps/my-app.war
 # ENV JAVA_OPTS="-Xms512m -Xmx1024m"
 
 # Expose the default Tomcat port
-EXPOSE 8080
+EXPOSE 9090
 
 # Start Tomcat
 CMD ["catalina.sh", "run"]
